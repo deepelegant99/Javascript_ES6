@@ -1,7 +1,42 @@
+/*
+Dom Manipulations
+
+*/
+const lu = document.querySelector('.items');
+// lu.remove();
+// lu.firstElementChild.remove();
+// lu.lastElementChild.remove();
+// lu.children[1].remove();
+// lu.children[1].innerHTML="<h1>Hello</h1>";
+// lu.firstElementChild.textContent="Hello You";
+// lu.lastElementChild.innerText='Hllo';
+
+const bn = document.querySelector('.btn');
+// bn.style.background ='red';
+bn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    // console.log("You clicked");
+    // console.log(e);
+    // console.log(e.target.className);
+    document.querySelector('#my-form').style.background ='purple';
+})
 
 
+/*
+Dom Selections
 
+//Single element selector
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('.btn'));
 
+//Multiple elment selector
+console.log(document.querySelectorAll('.item'));
+
+const items = document.querySelectorAll('.item');
+
+items.forEach((item)=>console.log(item));
+
+*/
 
 /*
 Constructor function
