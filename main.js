@@ -1,7 +1,14 @@
+
+
+
+
+
+
+
+
 /*
 Dom Manipulations
 
-*/
 const lu = document.querySelector('.items');
 // lu.remove();
 // lu.firstElementChild.remove();
@@ -20,6 +27,8 @@ bn.addEventListener('click', (e)=>{
     // console.log(e.target.className);
     document.querySelector('#my-form').style.background ='purple';
 })
+
+*/
 
 
 /*
@@ -64,6 +73,16 @@ console.log(myfather.dob)
 console.log(myfather.getBirthYear())
 console.log(myMother.getFullName())
 
+//function constructor
+function Value(k=0){
+    this.value =k;
+    this.increment = function(){this.value+=k;} 
+    this.decrement = function(){this.value-=k;}
+    this.getValue = function(){return k}
+}
+
+const val = new Value(); 
+console.log(val);
 */
 
 /*
